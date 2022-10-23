@@ -49,3 +49,6 @@ int bank=0;     //bank select [0-3]
 ## ライセンス
 ライセンスはMITライセンスに従っています。licenseディレクトリのLICENSEを参照ください。
 また、make.batおよびsrc内のファイルは[SGDK](https://github.com/Stephane-D/SGDK)のファイルを一部あるいは全て使用しています。SGDKのライセンスはlicenseディレクトリのlicense.txtを参照ください。
+
+## 備考（詳しい方向け）
+H-INTレジスタの値でハードウェア的に上書きされる$72-73は、BIOS本来の値になるように0xFD0Cになるように修正しています。

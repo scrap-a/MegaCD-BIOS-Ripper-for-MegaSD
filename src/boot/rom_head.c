@@ -4,10 +4,12 @@ __attribute__((externally_visible))
 const ROMHeader rom_header = {
 #if (ENABLE_BANK_SWITCH != 0)
     "SEGA SSF        ",
+#elif (MODULE_MEGAWIFI != 0)
+    "SEGA MEGAWIFI   ",
 #else
     "SEGA MEGA DRIVE ",
 #endif
-    "(C)scrap_a 2021 ",
+    "scrap_a 2022.OCT",
     "BIOS RIPPING PROGRAM FOR MEGASD                 ",
     "BIOS RIPPING PROGRAM FOR MEGASD                 ",
     "GM 00000000-00",
